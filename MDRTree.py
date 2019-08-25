@@ -2,7 +2,11 @@
 '''
 Created on 2019年8月15日
 
-@author: zhao fan
+@author: 
+zhao fan
+zhao huihui
+chen ren hai
+feng zhi yong
 '''
 import math
 import hashlib
