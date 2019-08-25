@@ -1,19 +1,12 @@
 # MDR-Tree
 
-**Python for street networks**
+**Python for MDR-tree construction**
 
-Retrieve, model, analyze, and visualize street networks from OpenStreetMap:
-[full overview](https://geoffboeing.com/2016/11/osmnx-python-street-networks/).
-
-**Citation info**: Boeing, G. 2017. "[OSMnx: New Methods for Acquiring, Constructing, Analyzing, and Visualizing Complex Street Networks](https://geoffboeing.com/publications/osmnx-complex-street-networks/)." *Computers, Environment and Urban Systems* 65, 126-139. doi:10.1016/j.compenvurbsys.2017.05.004
+Design of Efficient Storage Organization and Query Algorithm Based on Two-dimensional Geospatial Big Data
 
 ## Overview
 
-**OSMnx** is a Python package that lets you download spatial geometries and
-model, project, visualize, and analyze street networks from OpenStreetMap's
-APIs. Users can download and model walkable, drivable, or bikable urban
-networks with a single line of Python code, and then easily analyze and
-visualize them:
+**MDR-Tree** 由于城市交通信息的复杂性、数据量大、更新速度快等特征，当前的空间索引技术很难针对二维地理空间信息数据进行高效的检索。为了优化空间大数据下二维地理空间信息数据的存储组织结构，提高检索效率，本文提出了一种对二维地理空间信息数据进行多层切片递归的空间索引树构造算法MDR-Tree(Multiple Dimensional Recursive-Tree)
 
 ```python
 import osmnx as ox
