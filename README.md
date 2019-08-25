@@ -23,25 +23,9 @@ Design of Efficient Storage Organization and Query Algorithm Based on Two-dimens
 
 
 ## How to use OSMnx
-
-
-
-### Create place boundary shapefiles from OpenStreetMap
-
-
-
-### Download and model street networks
-
-
-
-### Correct and simplify street network topology
-
-
-### Save street networks to disk
-
-
-### Analyze and visualize street networks
-
+**初始化** 首先我们先从OSM开源地图库中下载天津，北京以及全国地图，获取到其中的道路网数据并加载
+**查询demo** 在初始化地图后，我们可以利用query_MDR_demo的代码进行数据查询，其中GPS点数据可以用我们提供的，其中pikcle文件是北京的
+打点数据，TJ.csv文件是天津市的打点数据，也可以用其他任意打点数据进行区域查询，只需要输入二维经纬度坐标即可。
 
 ## More info
 **对比实验** 本文采用STR-tree算法和STR-网格混合树算法作为对比算法
