@@ -19,11 +19,9 @@ MDR树应用于二维地理空间数据的快速查询，在MDR树空间索引�
 
 Name | Description
 -----|------
-`latest` | `master` compiled with release flag
-`latest-assertions` | `master` compiled with with release flag, assertions enabled and debug symbols
-`latest-debug` | `master` compiled with debug flag
-`<tag>` | specific tag compiled with release flag
-`<tag>-debug` | specific tag compiled with debug flag
+`shapely` | Shapely is a BSD-licensed Python package for manipulation and analysis of planar geometric objects
+`fiona` | Fiona is OGR’s neat and nimble API for Python programmers.
+`osmnx` | OSMnx is a Python package for downloading administrative boundary shapes and street networks from OpenStreetMap
 
 #### 查询测试
 在初始化地图后，我们可以利用query_MDR_demo的代码进行数据查询，其中GPS点数据可以用我们提供的，其中pikcle文件是北京的
