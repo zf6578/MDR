@@ -10,7 +10,8 @@
 
 ## How to use MDR-Tree
 #### 数据介绍和获取
- * Works online (fast) or offline (no roaming charges when you are abroad)
+MDR树应用于二维地理空间数据的快速查询，在MDR树空间索引结构构建过程中需要用到道路数据，在这里我们分别用城市级数据和全国级道路网格构建索引树，数据来源于开源地图数据OSM，同时，为了测试我们的算法，我们还需要不同城市的GPS打点数据。
+ * 全国道路数据可以在OSM中直接下载 http://download.geofabrik.de/asia.html，选取其中的道路数据即可
  * Turn-by-turn voice guidance (recorded and synthesized voices)
  * Optional lane guidance, street name display, and estimated time of arrival
  * Supports intermediate points on your itinerary
