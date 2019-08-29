@@ -20,13 +20,14 @@ MDR树应用于二维地理空间数据的快速查询，在MDR树空间索引�
 #### 查询测试
 在初始化地图后，我们可以利用query_MDR_demo的代码进行数据查询，其中GPS点数据可以用我们提供的，其中pikcle文件是北京的
 打点数据，TJ.csv文件是天津市的打点数据，也可以用其他任意打点数据进行区域查询，只需要输入二维经纬度坐标即可。
+#### 许可
+这个项目使用的是MIT许可类型，然而数据下载使用了 [Open Database License](http://wiki.openstreetmap.org/wiki/Open_Database_License) 
 #### 作者
 
 ## More info
 #### 对比实验
 本文采用STR-tree算法和STR-网格混合树算法作为对比算法
 排序切片递归树算法 [STR, read this](https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=582015&tag=1/).
-
 STR和网格混合树算法 [STR-网格混合树，read this](https://ieeexplore.ieee.org/document/5980718/).
 #### 鸣谢
 
