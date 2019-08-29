@@ -15,19 +15,18 @@ MDR树应用于二维地理空间数据的快速查询，在MDR树空间索引�
  * 城市级的道路网数据获取方式有多种，我们推荐一种利用第三方开源软件库OSMNX的方法，详情请参考osmnx手册 https://osmnx.readthedocs.io/en/stable/
  * 用于测试的GPS打点数据没有特殊的要求，只需二维坐标即可，文件中tj.csv是天津市的打点数据，5767.pikcle是北京市的打点数据
 #### 部署和运行
-要运行我们的MDR算法，你可能需要安装如下软件库：
+* 要运行我们的MDR算法，你可能需要安装如下软件库：shapely，用于生成几何对象；fiona，用于在python中解析几何文件；osmnx，用于下载osm地图数据
+* 下面我们来介绍MDR算法中的几个主要函数
 
 Name | Description
 -----|------
-`shapely` | Shapely is a BSD-licensed Python package for manipulation and analysis of planar geometric objects
-`fiona` | Fiona is OGR’s neat and nimble API for Python programmers.
-`osmnx` | OSMnx is a Python package for downloading administrative boundary shapes and street networks from OpenStreetMap
-`pyproj` | Python interface to PROJ (cartographic projections and coordinate transformations library).
-`hashlib` | This module implements a common interface to many different secure hash and message digest algorithms.
+`createTree` | 生成MDR树的主函数
+`cross_search` | 对二维相邻切片进行十字矩阵搜索
+`query_rect` | 查询函数，主要应用于区域查询
+`get_rec_from_area` | 安装一定距离构建搜索框，并生成命中对象
+`stripPartition` | 按照某一维数据进行排序并按照一定规则进行切割
 
- * 全国道路数据可以在OSM中直接下载 http://download.geofabrik.de/asia.html 选取其中的道路数据即可
- * 城市级的道路网数据获取方式有多种，我们推荐一种利用第三方开源软件库OSMNX的方法，详情请参考osmnx手册 https://osmnx.readthedocs.io/en/stable/
- * 用于测试的GPS打点数据没有特殊的要求，只需二维坐标即可，文件中tj.csv是天津市的打点数据，5767.pikcle是北京市的打点数据
+ * 在完成环境部署以后利用函数createTree创建索引树，然后利用查询函数就可以实现数据查询了
 #### 查询测试
 在初始化地图后，我们可以利用query_MDR_demo的代码进行数据查询，其中GPS点数据可以用我们提供的，其中pikcle文件是北京的
 打点数据，TJ.csv文件是天津市的打点数据，也可以用其他任意打点数据进行区域查询，只需要输入二维经纬度坐标即可。
