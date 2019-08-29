@@ -16,6 +16,7 @@ MDR树应用于二维地理空间数据的快速查询，在MDR树空间索引�
  * 用于测试的GPS打点数据没有特殊的要求，只需二维坐标即可，文件中tj.csv是天津市的打点数据，5767.pikcle是北京市的打点数据
 #### 安装和部署
 要运行我们的MDR算法，你可能需要安装如下软件库：
+
 Name | Description
 -----|------
 `latest` | `master` compiled with release flag
@@ -23,6 +24,7 @@ Name | Description
 `latest-debug` | `master` compiled with debug flag
 `<tag>` | specific tag compiled with release flag
 `<tag>-debug` | specific tag compiled with debug flag
+
 #### 查询测试
 在初始化地图后，我们可以利用query_MDR_demo的代码进行数据查询，其中GPS点数据可以用我们提供的，其中pikcle文件是北京的
 打点数据，TJ.csv文件是天津市的打点数据，也可以用其他任意打点数据进行区域查询，只需要输入二维经纬度坐标即可。
