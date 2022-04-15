@@ -1,0 +1,7 @@
+state:
+  iteration: 0
+params:
+  client_number: 2
+  momentum: 0
+  opt_name: 'adam'
+  optimizer_param: {lr: 1}
